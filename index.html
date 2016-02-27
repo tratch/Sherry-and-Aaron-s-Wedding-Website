@@ -32,32 +32,23 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-<script
-src="http://maps.googleapis.com/maps/api/js">
-</script>
+<style>
+    .google-maps {
+   position: relative;
+padding-bottom: 10%;
+padding-top: 230px;
+height: 0;
+overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
 
-<script>
-var myCenter=new google.maps.LatLng(43.5064054,-79.6266673);
-
-function initialize()
-{
-var mapProp = {
-  center:myCenter,
-  zoom:13,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker=new google.maps.Marker({
-  position:myCenter,
-  });
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+</style>
 
 
 </head>
@@ -113,7 +104,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 							<div class="header-content-inner">
 									<h1>Shery & Aaron</h1>
 					<h2> We're getting married!</h2>
-					<h5>It's kind of a big deal</h5>
+					<font style="text-shadow:none;color:#ffffff;font-size:14px">It's kind of a big deal</font>
 									<hr>
 									<strong><p style="text-shadow:none;color:#ffffff;font-size:20px">September 24th, 2016</p></strong>
 								 
@@ -141,7 +132,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
                     <h2 class="section-heading">Wedding Events</h2>
                     <hr class="light">
                     <p class="text-faded"><strong>Location: </strong>Lakeshore Convention Centre.<br><i>806 Southdown Rd. Mississauga, Ontario</i><br>
-					<strong>The Details: </strong>Ceremony will begin at 4:30. Cocktail hour to follow, with Reception beginning at 6:30. <br><br>
+					<strong>The Details: </strong>Ceremony will begin at 4:30.<br> Cocktail hour to follow, with reception beginning at 6:30 <br><br>
 					</p>
                     
                 </div>
@@ -169,14 +160,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
                     <div class="service-item">
                         <i class="service-icon fa fa-users"></i>
                         <h4>Fun People</h4>
-                        <p>Italians, Persians, and everyone in between.</p>
+                        <p>Italians, Persians, and everyone in between</p>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
                     <div class="service-item">
                         <i class="service-icon fa fa-glass"></i>
                         <h4>Dinner and Drinks</h4>
-                        <p>Cold drinks, delicious eats, and tasty treats to suit every taste. </p>
+                        <p>Cold drinks, delicious eats, and tasty treats to suit every taste </p>
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
@@ -210,17 +201,17 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <br><i>Reservations must be made before <u>August 24th, 2016</u> to ensure the wedding rate is applied.</i></p>
 
 				 <h3>How do I get to the wedding venue?</h3>
-				 <p> The Ceremony and Reception are located at Lakeshore Convention Centre. The address is 806 Southdown Rd. Mississauga, Ontario. It is only a short cab ride from the hotel. If you choose to drive, even though we don't recommend it, there is lots of parking on site. 
+				 <p> The ceremony and reception are located at Lakeshore Convention Centre. The address is 806 Southdown Rd. Mississauga, Ontario. It is only a short cab ride from the hotel. If you choose to drive, even though we don't recommend it, there is ample parking on site. 
 				 
 
-                <div class='row'>
+                <div class='google-maps'>
                    
-                    <iframe src="https://www.google.com/maps/d/embed?mid=zp7ZCGH_9ODU.kB-HSQlLHM-w" width="400" height="380"></iframe>
+                   <iframe src="https://www.google.com/maps/d/embed?mid=zp7ZCGH_9ODU.kB-HSQlLHM-w&z=13" height="600" width="100%" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
                 </div>
 				 </p>
 				 <h3>Can I bring my children? </h3>
 				 <p>We prefer to limit this event to Adults only. Thanks for understanding. </p>
-				 <h3>We noticed there is no gift registry </h3>
+				 <h3>Do you have a gift registry?</h3>
 				 <p>If you do wish to give, we greatly appreciate it and ask for monetary gifts only. After 2 years of living together and shop-aholic moms, we have a house fully stocked with love and enough blenders to make Martha Stewart jealous.</p>
 				 <h3>...open bar?</h3>
 				 <p>OPEN BAR!</p>
@@ -236,15 +227,16 @@ google.maps.event.addDomListener(window, 'load', initialize);
  <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
+               <div class="col-lg-2 col-sm-3">
                     
-                        <img src="img/a.JPG" class="img-responsive" alt="">
-                      
+                        <img src="img/s.png" class="img-responsive" alt="">
+                        
+                               
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+			      <div class="col-lg-2 col-sm-3">
                     
-                        <img src="img/b.JPG" class="img-responsive" alt="">
+                        <img src="img/b.png" class="img-responsive" alt="">
                         
                     </a>
                 </div>
@@ -260,14 +252,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
                         
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    
-                        <img src="img/d.JPG" class="img-responsive" alt="">
-                        
-                               
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
+                               <div class="col-lg-4 col-sm-6">
                     
                         <img src="img/e.JPG" class="img-responsive" alt="">
                         
@@ -287,32 +272,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
                                
                     </a>
                 </div>
+				 
 				  <div class="col-lg-4 col-sm-6">
                     
-                        <img src="img/g.JPG" class="img-responsive" alt="">
+                        <img src="img/i.png" class="img-responsive" alt="">
                         
                                
                     </a>
-                </div>
+                </div>  
 				  <div class="col-lg-4 col-sm-6">
-                    
-                        <img src="img/i.jpg" class="img-responsive" alt="">
-                        
-                               
-                    </a>
-                </div>  <div class="col-lg-4 col-sm-6">
-                   
-                        <img src="img/j.JPG" class="img-responsive" alt="">
-                        
-                               
-                    </a>
-                </div>  <div class="col-lg-4 col-sm-6">
-                    
-                        <img src="img/k.JPG" class="img-responsive" alt="">
-                        
-                               
-                    </a>
-                </div>  <div class="col-lg-4 col-sm-6">
                     
                         <img src="img/l.JPG" class="img-responsive" alt="">
                         
@@ -324,13 +292,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
                         
                                
                     </a>
-                </div>  <div class="col-lg-4 col-sm-6">
-                    
-                        <img src="img/n.JPG" class="img-responsive" alt="">
-                        
-                               
-                    </a>
-                </div>  <div class="col-lg-4 col-sm-6">
+                </div>  
+				<div class="col-lg-4 col-sm-6">
                     
                         <img src="img/p.JPG" class="img-responsive" alt="">
                         
@@ -344,18 +307,24 @@ google.maps.event.addDomListener(window, 'load', initialize);
                     </a>
                 </div>
 				
-				<div>
+				
+				 <div class="col-lg-2 col-sm-3">
                     
-                        <img src="img/s.png" class="img-responsive" alt="">
-                        
-                               
+                        <img src="img/a.png" class="img-responsive" alt="">
+                      
+                    </a>
+                </div>
+               <div class="col-lg-2 col-sm-3">
+                    
+                        <img src="img/d.JPG" class="img-responsive" alt="">
+                      
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    
+    <br>
     <section class="bg-primary" id="contact">
         <div class="container">
             <div class="row">
