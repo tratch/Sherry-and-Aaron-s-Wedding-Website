@@ -76,6 +76,20 @@
 				padding: 0;
 		}
 
+		#rsvp iframe{
+			height: 497px; 
+			width: 100%;
+		}
+
+		@media (max-width: 500px) {
+
+					#rsvp iframe{
+			height: 630px; 
+			width: 100%;
+		}
+
+		 }
+
 		.navbar-default {
 				border-color: rgba(34,34,34,.05);
 				font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
@@ -122,6 +136,8 @@
 		}
 
 		@media(min-width:768px) {
+
+
 				.navbar-default {
 						border-color: rgba(255,255,255,.3);
 						background-color: transparent;
